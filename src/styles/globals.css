@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--c-prim: #fff;
+	--c-sec: rgb(59, 59, 59);
+	--ff-prim: 'Gloria Hallelujah';
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: var(--ff-prim), -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+		Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	color: var(--c-prim);
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
