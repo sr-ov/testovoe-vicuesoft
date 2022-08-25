@@ -1,5 +1,6 @@
 import * as React from 'react'
 import Image from 'next/image'
+
 import { MOCK_IMAGE } from '../../constants'
 import { IBeer } from '../../types/IBeer'
 

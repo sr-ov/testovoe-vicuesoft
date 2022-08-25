@@ -7,6 +7,7 @@ import type {
 	GetStaticPaths,
 } from 'next'
 import { ParsedUrlQuery } from 'querystring'
+
 import { getBeer, getBeers } from '../api'
 import { IBeer } from '../types/IBeer'
 import { BeerProduct } from '../components'

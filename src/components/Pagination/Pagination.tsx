@@ -1,4 +1,4 @@
-import * as React from 'react'
+import { useMemo, useState, memo } from 'react'
 import { useUpdateEffect } from 'react-use'
 
 interface IPaginationProps {
@@ -9,9 +9,9 @@ const START_PAGE = 1
 const END_PAGE = 37
 
 const Pagination: React.FunctionComponent<IPaginationProps> = ({ onChangePage }) => {
-	const [currentPage, setCurrentPage] = React.useState(START_PAGE)
-	const isFirstPage = React.useMemo(() => currentPage === START_PAGE, [currentPage])
-	const isLastPage = React.useMemo(() => currentPage === END_PAGE, [currentPage])
+	const [currentPage, setCurrentPage] = useState(START_PAGE)
+	const isFirstPage = useMemo(() => currentPage === START_PAGE, [currentPage])
+	const isLastPage = useMemo(() => currentPage === END_PAGE, [currentPage])
 
 	const onPrevPage = () => {
 		setCurrentPage((prev) => (prev === START_PAGE ? prev : prev - 1))
@@ -45,4 +45,4 @@ const Pagination: React.FunctionComponent<IPaginationProps> = ({ onChangePage })
 	)
 }
 
-export default React.memo(Pagination)
+export default memo(Pagination)

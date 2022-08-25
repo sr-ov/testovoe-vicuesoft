@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+
 import { MAX_CHARS, MOCK_IMAGE } from '../../constants'
 
 interface ICardProps {

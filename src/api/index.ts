@@ -1,4 +1,5 @@
 import axios from 'axios'
+
 import { API_URL, PER_PAGE } from '../constants'
 import { IBeer } from '../types/IBeer'
 
